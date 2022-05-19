@@ -1,0 +1,5 @@
+package br.edu.uniceplac.compra.repository;
+
+public interface UsuarioRepository extends {
+
+}
