@@ -19,17 +19,8 @@ public class UsuarioController {
 
 	@PostMapping
 	public Usuario create(@RequestBody Usuario usuario) {
-		
 		UsuarioEntity usuarioEntity = new UsuarioEntity();
-		
 		usuarioEntity.setNome(usuario.getNome());
-		usuarioEntity.setSenha(usuario.getSenha());
-		usuarioEntity = usuarioRepository.save(usuarioEntity);
-		usuarioEntity.setId(usuario.getId());
-		
-	return usuario;
 	}
-	
-	
 
 }

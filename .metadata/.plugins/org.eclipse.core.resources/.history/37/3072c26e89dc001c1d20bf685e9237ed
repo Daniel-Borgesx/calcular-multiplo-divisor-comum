@@ -1,0 +1,25 @@
+package br.edu.uniceplac.compra.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import br.edu.uniceplac.compra.repository.UsuarioRepository;
+
+
+@RequestMapping("/usuarios")
+public class UsuarioController {
+	
+	private final UsuarioRepository usuarioRepository;
+	
+	public UsuarioController(UsuarioRepository usuarioRepository) {
+		this.usuarioRepository = usuarioRepository;		
+	}
+
+@PostMapping("/usuarios")
+public Usuario create (RequestBody Usuario usuario) {
+	
+}
+
+}
